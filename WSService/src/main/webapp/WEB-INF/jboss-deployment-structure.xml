@@ -1,0 +1,11 @@
+<jboss-deployment-structure>
+
+   <deployment>
+
+      <dependencies>
+         <module name="com.oracle.driver" />
+      </dependencies>
+
+   </deployment>
+
+</jboss-deployment-structure>
