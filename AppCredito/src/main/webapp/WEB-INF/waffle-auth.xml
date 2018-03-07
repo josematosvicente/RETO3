@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sec="http://www.springframework.org/schema/security"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+    
+	
+
+    <sec:http auto-config="true" security="none">
+<!--      	 <sec:form-login -->
+<!--                      login-page="/login.jsp" -->
+<!--                      login-processing-url="/j_spring_security_check" -->
+<!--                      default-target-url="/bandeja.jsp" -->
+<!--                      authentication-failure-url="/login.jsp?login_error=1"/>         -->
+<!-- 		<sec:intercept-url pattern="**/*_NOSECURE" access="permitAll" /> -->
+    </sec:http>
+      
+      
+     <sec:authentication-manager alias="authenticationProvider">
+            <sec:authentication-provider ref="waffleSpringAuthenticationProvider" />
+     </sec:authentication-manager>
+      
+      
+    <bean id="waffleWindowsAuthProvider" class="waffle.windows.auth.impl.WindowsAuthProviderImpl" />
+      
+      
+    <bean id="waffleSpringAuthenticationProvider" class="waffle.spring.WindowsAuthenticationProvider">
+        <property name="allowGuestLogin" value="false" />
+        <property name="principalFormat" value="fqn" />
+        <property name="roleFormat" value="both" />
+        <property name="authProvider" ref="waffleWindowsAuthProvider" />
+    </bean>
+    
+<!--     <sec:debug/> -->
+</beans>

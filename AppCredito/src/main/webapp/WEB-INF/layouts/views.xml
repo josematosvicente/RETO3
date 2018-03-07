@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="cotizadorload" extends="CotizadorTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/cotizador.jsp" />
+	</definition>
+	
+	
+	<definition name="resultadoload" extends="ResultadoTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/resultado.jsp" />
+	</definition>
+	
+	<definition name="canalesatencionload" extends="CanalesTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/canalesAtencion.jsp" />
+	</definition>
+	
+	<definition name="error" >
+	    <put-attribute name="body"	value="/WEB-INF/pages/error.jsp" />
+	</definition>
+	
+	<definition name="errorview">
+	    <put-attribute name="body"	value="/WEB-INF/pages/errorview.jsp" />
+	</definition>
+	
+</tiles-definitions>

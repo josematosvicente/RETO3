@@ -1,0 +1,21 @@
+
+.fondo-home {
+    background: url(../img/back.jpg);
+    background-position-y: 77px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-color: #EEE;
+}
+button.ui-button-text-only {
+    /* background: #DFEAFA !important; */
+    background: #0F76BB;
+    color: #fff !important;
+    padding: 2px;
+    /* font-weight: bold !important; */
+    border: 1px solid #8080c0 !important;
+    text-transform: uppercase;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 4px 8px;
+}

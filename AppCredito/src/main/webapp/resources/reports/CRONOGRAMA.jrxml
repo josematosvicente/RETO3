@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Test" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d282db1-c5ca-413f-89e4-cfecb6f199d0">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="tabla_titulo" hAlign="Left" vAlign="Middle" fontName="Gill Sans MT" fontSize="8" isBold="true">
+		<box>
+			<topPen lineWidth="0.25"/>
+			<leftPen lineWidth="0.25"/>
+			<bottomPen lineWidth="0.25"/>
+			<rightPen lineWidth="0.25"/>
+		</box>
+	</style>
+	<style name="tabla_detalle" hAlign="Left" vAlign="Middle" fontName="Gill Sans MT" fontSize="6" isBold="false">
+		<box>
+			<topPen lineWidth="0.25"/>
+			<leftPen lineWidth="0.25"/>
+			<bottomPen lineWidth="0.25"/>
+			<rightPen lineWidth="0.25"/>
+		</box>
+	</style>
+	<style name="comentario" hAlign="Left" vAlign="Middle" fontName="Gill Sans MT" fontSize="6" isBold="false"/>
+	<style name="campo" hAlign="Left" vAlign="Middle" fontName="Gill Sans MT" fontSize="6" isBold="false" isUnderline="true"/>
+	<style name="titulo_comentario" hAlign="Left" vAlign="Middle" fontName="Gill Sans MT" fontSize="6" isBold="true">
+		<box>
+			<bottomPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<parameter name="PARAMETROS" class="java.util.LinkedHashMap" isForPrompting="false"/>
+	<parameter name="LOGO" class="java.lang.String" isForPrompting="false"/>
+	<field name="column01" class="java.lang.String"/>
+	<field name="column02" class="java.lang.String"/>
+	<field name="column03" class="java.lang.String"/>
+	<field name="column04" class="java.lang.String"/>
+	<field name="column05" class="java.lang.String"/>
+	<field name="column06" class="java.lang.String"/>
+	<field name="column07" class="java.lang.String"/>
+	<field name="column08" class="java.lang.String"/>
+	<field name="column09" class="java.lang.String"/>
+	<field name="column10" class="java.lang.String"/>
+	<field name="column11" class="java.lang.String"/>
+	<field name="column12" class="java.lang.String"/>
+	<field name="column13" class="java.lang.String"/>
+	<field name="column14" class="java.lang.String"/>
+	<field name="column15" class="java.lang.String"/>
+	<field name="column16" class="java.lang.String"/>
+	<field name="column17" class="java.lang.String"/>
+	<field name="column18" class="java.lang.String"/>
+	<field name="column19" class="java.lang.String"/>
+	<field name="column20" class="java.lang.String"/>
+	<field name="column21" class="java.lang.String"/>
+	<field name="column22" class="java.lang.String"/>
+	<field name="column23" class="java.lang.String"/>
+	<field name="column24" class="java.lang.String"/>
+	<field name="column25" class="java.lang.String"/>
+	<field name="column26" class="java.lang.String"/>
+	<field name="column27" class="java.lang.String"/>
+	<field name="column28" class="java.lang.String"/>
+	<field name="column29" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="295" y="0" width="260" height="20" forecolor="#000000" uuid="37abfdb6-d9b6-478c-a21f-5f7e33021b0e"/>
+				<textElement textAlignment="Right">
+					<font size="14" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[CRONOGRAMA DE PAGOS]]></text>
+			</staticText>
+			<image onErrorType="Blank">
+				<reportElement x="2" y="0" width="55" height="39" uuid="81b30bcc-6bca-4b1e-8318-3d6238ae4c3b"/>
+				<imageExpression><![CDATA[$P{LOGO}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="1" y="43" width="552" height="1" forecolor="#2F61AA" uuid="5a85c4fa-d605-4d5f-a4eb-b259850056c3"/>
+			</line>
+			<staticText>
+				<reportElement x="442" y="20" width="54" height="9" uuid="42066a9d-4111-41f3-bc36-6025edf11555"/>
+				<textElement>
+					<font size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha y Hora:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="67" width="74" height="16" uuid="7baa500a-94b2-42ac-8ece-10afdd9d4216"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FECHA INICIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="67" width="120" height="16" uuid="808ce01f-0b90-4aa2-93e6-f62f8f0e0a69"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FECHA FIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="67" width="93" height="16" uuid="0ce0348a-aa1b-4e11-ab7a-c8f7d73fb378"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TASA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="50" width="93" height="16" uuid="5e2c5d5d-4a44-4202-a366-254f36e86a3f"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[MONTO SOLICITADO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="86" width="552" height="1" forecolor="#2F61AA" uuid="af8e758a-803a-4162-a7c3-6c419341fe71"/>
+			</line>
+			<line>
+				<reportElement x="1" y="43" width="1" height="42" uuid="8403dd30-b3f8-4659-93ce-4a7c5acac11c"/>
+			</line>
+			<line>
+				<reportElement x="552" y="43" width="1" height="42" uuid="869a3faa-1ff6-47f3-ab90-8ca982a4b3f6"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="496" y="20" width="57" height="9" uuid="d4aff76c-fa09-4209-b91a-33fef5bb3cdb"/>
+				<textElement textAlignment="Right">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd hh:mm").format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="202" y="51" width="74" height="16" uuid="5a43389d-c122-4d1a-a01e-dfb2f7e355b6"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CUOTAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="50" width="120" height="16" uuid="6080c6c7-67e9-4778-8733-56e038a8441e"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TOTAL INTERESES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="57" y="0" width="49" height="16" isPrintWhenDetailOverflows="true" uuid="a1fc86c9-2942-4e0a-ad52-4ce545f6dcc2"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column02}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="156" y="0" width="41" height="16" isPrintWhenDetailOverflows="true" uuid="8c0e0845-faac-45e4-8e35-93aa6b9c21d6"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column04}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="2" y="0" width="55" height="16" isPrintWhenDetailOverflows="true" uuid="82634966-189b-4a4c-a77a-3752ad6e490f"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column01}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="106" y="0" width="50" height="16" isPrintWhenDetailOverflows="true" uuid="0af1e9cc-6421-486b-b09a-2934b7a13a61"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column03}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="197" y="0" width="42" height="16" isPrintWhenDetailOverflows="true" uuid="a7d4e1c2-b031-43b9-98ab-6342ec4e5b08"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column05}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="239" y="0" width="56" height="16" isPrintWhenDetailOverflows="true" uuid="7a7077d6-0d95-4944-9c02-3e56ae96d697"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column06}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="295" y="0" width="75" height="16" isPrintWhenDetailOverflows="true" uuid="46dc2111-8b58-4ba1-8609-2630e36bcf9a"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column07}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="46" height="16" isPrintWhenDetailOverflows="true" uuid="3de3edf3-6283-445f-b479-1f19ea2da252"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column08}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="416" y="0" width="53" height="16" isPrintWhenDetailOverflows="true" uuid="20e45653-27fe-4bb4-904f-345978b3a926"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column09}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="469" y="0" width="41" height="16" isPrintWhenDetailOverflows="true" uuid="ae2218b1-8ec8-4bf4-92a9-c8117f8d8ed1"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column10}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="510" y="0" width="41" height="16" isPrintWhenDetailOverflows="true" uuid="53aa3d85-3164-449a-8c6a-111aed829e11"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{column11}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="21" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="430" y="36" width="125" height="16" uuid="e42ea318-b8d1-4814-9160-da628199f7e3"/>
+				<textElement textAlignment="Right">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[CRONOGRAMAS.PDF]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
