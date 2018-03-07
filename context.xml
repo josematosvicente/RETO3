@@ -1,0 +1,11 @@
+<Resource 
+	    name="jdbc/test" 
+		auth="Container" 
+		driverClassName="com.mysql.jdbc.Driver"
+		type="javax.sql.DataSource"
+        maxActive="100" 
+        maxIdle="30" 
+        maxWait="30000"
+        url="jdbc:mysql://10.10.33.15:3306/test"
+        username="test" 
+        password="test"/>
